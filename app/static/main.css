@@ -1,0 +1,7 @@
+/* custom css */
+#lineChart {    
+	position:absolute;
+	top:10px;
+	left:410px;
+	height: 150px;
+}

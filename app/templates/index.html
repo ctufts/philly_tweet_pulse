@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+  <style>
+
+  .axis {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .x.axis path {
+  display: none;
+  }
+
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+  #barChart {    
+    position:absolute;
+    top:10px;
+    left:10px;
+    width:400px;
+    height: 400px; 
+  }
+
+
+
+  #lineChart { 
+    position:absolute;
+    top:10px;
+    left:610px;
+    height:400px;
+    width:400px;
+  }
+
+  
+  </style>
+</head>
+
+<body>
+<div id="barChart"/>
+<!-- <div id="lineChart"/>   -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src={{ url_for('static', filename='main.js') }}></script>
+
+
+
+
+</body>
