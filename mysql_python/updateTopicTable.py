@@ -30,7 +30,9 @@ curOut = cnx.cursor(buffered=True)
 
 # change query to get tweet id and tweets and date time
 # ignore retweets
-query = ("SELECT id, created_at, tweet FROM tweetTable WHERE retweeted = 0")
+query = ("SELECT id, created_at, tweet FROM tweetTable WHERE retweeted = 0 \
+	AND created_at >= (select date_sub(MAX(created_at), \
+	 INTERVAL 24 hour)FROM tweetTable)")
 
 curIn.execute(query)
 
@@ -50,8 +52,7 @@ for id, created_at, tweet in curIn:
 	# write data to word frequency table
 	for key, value in words.items():
 		data = [key,value, tweet_length, created_at, id]
-		print(data)
-		stmt = "INSERT INTO docMatrix \
+		stmt = "INSERT IGNORE INTO docMatrix \
 		(word, frequency, tweet_length, \
 			created_at, id) VALUES (%s, %s, %s, %s, %s)"
 		curOut.execute(stmt, data)
@@ -60,7 +61,6 @@ for id, created_at, tweet in curIn:
 		if s not in stopwords and len(s) > 2 ])	
 
 
-# print(tweets[0])
 cnx.commit()
 cnx.close()
 

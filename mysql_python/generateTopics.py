@@ -19,7 +19,7 @@ dictionaryObject.close()
 # dictionary = corpora.Dictionary(filtered_tweets)
 # corpus = [dictionary.doc2bow(text) for text in filtered_tweets]
 
-ldamodel = models.ldamulticore.LdaMulticore(corpus, num_topics=2, 
+ldamodel = models.ldamulticore.LdaMulticore(corpus, num_topics=20, 
                                                    id2word = dictionary, passes=50)
 
 # # generate vis
@@ -32,7 +32,7 @@ parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 print("absolute path = ", parent_directory)
 
 # write html to file
-pyLDAvis.save_html(data_vis, parent_directory + "/app/static/topic.html")
+pyLDAvis.save_json(data_vis, parent_directory + "/app/static/lda.json")
 # pyLDAvis.save_json(data_vis, 'lda.json')
 
 # shot html data

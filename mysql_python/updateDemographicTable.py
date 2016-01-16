@@ -18,12 +18,6 @@ import pandas as pd
 from nltk.corpus import stopwords
 
 
-
-
-
-
-
-
 ################# import db config settings ##################
 cnx = mysql.connector.connect(user=cs.user, password=cs.password,
                               host=cs.host,
@@ -32,9 +26,12 @@ cnx = mysql.connector.connect(user=cs.user, password=cs.password,
 # cursor for writing out to table
 curOut = cnx.cursor(buffered=True)
 
-# read in data as pd dataframe
-df = pd.read_sql('SELECT * from docMatrix;', con=cnx) 
+# read in last 24 hours of data
+df = pd.read_sql('SELECT * from docMatrix \
+	WHERE created_at >= (select date_sub(MAX(created_at),\
+	 INTERVAL 24 hour)FROM docMatrix) ;', con=cnx) 
 df['frequency'] = df['frequency'].astype(int)
+
 
 # import age and gender lexica
 age = pd.read_csv('lexica/emnlp14age.csv')
@@ -44,29 +41,36 @@ gender = pd.read_csv('lexica/emnlp14gender.csv')
 age_intercept = age[age.term == '_intercept'].loc[0,'weight']
 gender_intercept = gender[gender.term == '_intercept'].loc[0,'weight']
 
+age.columns = ['age_term', 'age_weight']
+gender.columns = ['gender_term', 'gender_weight']
 
-for name, group in df.groupby('id'):
+
+
+merged_df = pd.merge(df,age,how = 'left', \
+		left_on = 'word', right_on = 'age_term')
+merged_df = pd.merge(merged_df,gender,how = 'left', \
+		left_on = 'word', right_on = 'gender_term')
+
+
+for name, group in merged_df.groupby('id'):
 	# estimate age
-	merged_df = pd.merge(age, group, how = 'inner', \
-		left_on = 'term', right_on = 'word')
-	if merged_df.empty:
+	age_group = group.dropna(subset = ['age_weight'])
+	if age_group.empty:
 		estimated_age = age_intercept
 	else:
-		estimated_age = sum(merged_df.weight*merged_df.frequency/\
-			merged_df.tweet_length) + age_intercept
-	
-	#estimate gender
-	merged_df = pd.merge(gender, group, how = 'inner', \
-		left_on = 'term', right_on = 'word')
-	if merged_df.empty:
+		estimated_age = sum(age_group.age_weight*age_group.frequency/\
+			age_group.tweet_length) + age_intercept
+
+	gender_group = group.dropna(subset = ['gender_weight'])
+	if gender_group.empty:
 		estimated_gender = gender_intercept
 	else:
-		estimated_gender = sum(merged_df.weight*merged_df.frequency/\
-			merged_df.tweet_length) + gender_intercept
-
+		estimated_gender = sum(gender_group.gender_weight*gender_group.frequency/\
+			gender_group.tweet_length) + gender_intercept
+	
 	# write data to table 
-	data = [float(estimated_gender), float(estimated_age), name]
-	stmt = "INSERT INTO demographics \
+	data = [float(estimated_gender),float(estimated_age), name]
+	stmt = "INSERT IGNORE INTO demographics \
 	(gender, age, id) VALUES (%s, %s, %s)"
 	curOut.execute(stmt, data)
 	

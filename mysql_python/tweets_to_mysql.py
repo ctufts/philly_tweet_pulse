@@ -67,15 +67,18 @@ class listener(StreamListener):
           if 'retweeted_status' in all_data:
             retweeted = True
             rt_id     = all_data["retweeted_status"]["id_str"]
-            # final_rt_status = str(all_data["retweeted_status"]["screen_name"])  
           
           if 'quoted_status' in all_data:
             quoted = True
             quoted_id = all_data["quoted_status"]["id_str"] 
-      
+          
+          # protect against opt-in links which exceed well over 140 
+          # characters
+          if len(tweet) > 250:
+            tweet = tweet[0:250]
 
 
-		  # inser values into the db
+    		  # inser values into the db
           cursor.execute("INSERT INTO tweetTable (id, created_at, username,tweet, \
             coordinates, userTimeZone, retweeted) VALUES (%s,%s,%s,%s,%s,%s,%s)",
             (tweet_id, created_at, username, tweet, final_coordinates, user_tz, retweeted))
