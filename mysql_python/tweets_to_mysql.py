@@ -84,7 +84,7 @@ class listener(StreamListener):
             (tweet_id, created_at, username, tweet, final_coordinates, user_tz, retweeted))
           cnx.commit()
           
-          print((username,retweeted, quoted, quoted_id, rt_id))
+          #print((username,retweeted, quoted, quoted_id, rt_id))
           
           return True
         else:
