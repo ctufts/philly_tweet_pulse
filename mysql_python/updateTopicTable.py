@@ -15,7 +15,7 @@ import collections
 import pickle
 import gensim
 from nltk.corpus import stopwords
-
+import os.path
 
 ################# read in tweets from main table ##################
 cnx = mysql.connector.connect(user=cs.user, password=cs.password,
@@ -69,7 +69,9 @@ dictionary = gensim.corpora.Dictionary(tokenized_tweets)
 corpus = [dictionary.doc2bow(text) for text in tokenized_tweets]
 
 ########## write out corpus ###############
-file_Name = "data/corpus"
+parent_directory = os.path.abspath(os.path.dirname(__file__))
+
+file_Name = parent_directory + "/data/corpus"
 # open the file for writing
 fileObject = open(file_Name,'wb') 
 
@@ -77,7 +79,7 @@ pickle.dump(corpus,fileObject)
 fileObject.close()
 
 ### write out dictionary #################
-file_Name = "data/dictionary"
+file_Name = parent_directory + "/data/dictionary"
 # open the file for writing
 fileObject = open(file_Name,'wb') 
 

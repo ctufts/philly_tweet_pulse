@@ -16,7 +16,7 @@ import pickle
 import gensim
 import pandas as pd
 from nltk.corpus import stopwords
-
+import os.path
 
 ################# import db config settings ##################
 cnx = mysql.connector.connect(user=cs.user, password=cs.password,
@@ -34,8 +34,9 @@ df['frequency'] = df['frequency'].astype(int)
 
 
 # import age and gender lexica
-age = pd.read_csv('lexica/emnlp14age.csv')
-gender = pd.read_csv('lexica/emnlp14gender.csv')
+parent_directory = os.path.abspath(os.path.dirname(__file__))
+age = pd.read_csv(parent_directory + '/lexica/emnlp14age.csv')
+gender = pd.read_csv(parent_directory + '/lexica/emnlp14gender.csv')
 
 # get intercept values 
 age_intercept = age[age.term == '_intercept'].loc[0,'weight']

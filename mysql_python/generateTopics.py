@@ -6,8 +6,9 @@ import collections
 import pickle
 import os.path
 
-corpusObject = open('data/corpus','rb')  
-dictionaryObject = open('data/dictionary','rb')  
+parent_directory = os.path.abspath(os.path.dirname(__file__))
+corpusObject = open(parent_directory + '/data/corpus','rb')  
+dictionaryObject = open(parent_directory + '/data/dictionary','rb')  
 # load the object from the file into var b
 corpus = pickle.load(corpusObject) 
 dictionary = pickle.load(dictionaryObject)
@@ -29,10 +30,9 @@ data_vis = pyLDAvis.gensim.prepare(ldamodel, corpus, dictionary)
 
 # print(dname + "/topic.html")
 parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-print("absolute path = ", parent_directory)
 
 # write html to file
-pyLDAvis.save_json(data_vis, parent_directory + "/app/static/lda.json")
+pyLDAvis.save_json(data_vis, parent_directory + "/FlaskApp/static/lda.json")
 # pyLDAvis.save_json(data_vis, 'lda.json')
 
 # shot html data
