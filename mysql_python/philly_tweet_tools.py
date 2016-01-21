@@ -1,4 +1,5 @@
 from mysql_python import configSettings as cs
+#import configSettings as cs
 import mysql.connector
 import json
 import collections
@@ -42,16 +43,17 @@ def get_gender_data():
 
 
 	cursor=cnx.cursor()
-
 	query = ("SELECT if(gender >= 0, 'F','M') as GenderStr,\
-		date_format(created_at, '%m/%d/%Y %H') as ts, \
+		date_format(created_at, '%m/%d/%Y %H') as ts,\
 		count(*) as Count \
-		FROM tweetTable as t1 \
-		INNER JOIN (demographics as demo) \
-		ON (t1.id = demo.id) \
-		GROUP BY GenderStr, ts \
-		ORDER BY STR_TO_DATE(ts, '%m/%d/%Y %H')")
+		FROM \
+        (SELECT * from tweetTable WHERE \
+      	created_at >( select date_sub(max(created_at), interval 24 hour) \
+      	from tweetTable) ) AS A JOIN ( SELECT * from demographics) as B \
+	    ON( A.id = B.id) \
+	    GROUP BY GenderStr, ts")
 
+	# ORDER BY STR_TO_DATE(ts, '%m/%d/%Y %H')")
 	# read from sql db
 	df = pd.read_sql(query, con=cnx) 
 	df.ts = df.ts + ":00"
@@ -76,19 +78,24 @@ def get_age_data():
 	cursor=cnx.cursor()
 
 	query = ("SELECT date_format(created_at, '%m/%d/%Y %H') as ts,\
-      		case when age <= 17    then '17-'\
-           		when age > 17 and age <= 24  then '18-24'\
-           		when age > 24 and age <= 34  then '25-34'\
-           		when age > 34 and age <= 44  then '35-44'\
-           		when age > 44 and age <= 54  then '45-54'\
-           		when age > 54 and age <= 64  then '55-64'\
-           		else '65+'\
-      	    end ageRange,\
-      		count(*) as Count\
-			FROM tweetTable as t1 \
-			INNER JOIN (demographics as demo)\
-			ON (t1.id = demo.id)\
-			GROUP BY ageRange, ts")
+      	   case when age <= 17 then '0 - 17' \
+           when age > 17 and age <= 24  then '18-24' \
+           when age > 24 and age <= 34  then '25-34' \
+           when age > 34 and age <= 44  then '35-44' \
+           when age > 44 and age <= 54  then '45-54' \
+           when age > 54 and age <= 64  then '55-64' \
+           else '65+' \
+      end ageRange,\
+      count(*) as Count \
+	  FROM \
+	  (SELECT * from tweetTable WHERE \
+	  created_at >( select date_sub(max(created_at), interval 24 hour) \
+            from tweetTable) ) AS A \
+	  JOIN \
+	  ( SELECT * from demographics) as B \
+	  ON( A.id = B.id) \
+	  GROUP BY ageRange, ts \
+	  ORDER BY STR_TO_DATE(ts, '%m/%d/%Y %H')")
 
 	# read from sql db
 	df = pd.read_sql(query, con=cnx) 
