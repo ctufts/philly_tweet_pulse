@@ -8,12 +8,14 @@
 # Developing Age and Gender Predictive Lexica over Social Media. In EMNLP
 
 import csv
+import re
 import happierfuntokenizing
 import mysql.connector
 import configSettings as cs
 import collections
 import pickle
 import gensim
+from nltk import WordNetLemmatizer
 from nltk.corpus import stopwords
 import os.path
 
@@ -38,9 +40,13 @@ curIn.execute(query)
 
 ############# place tweets in a list #################
 
-
+# initialize lemmatizer()
+lem = WordNetLemmatizer()
 # initialize stopwords
 stopwords = stopwords.words('english')
+additional_stopwords = ['philly','philadelphia','...']
+for sword in additional_stopwords:
+    stopwords.append(sword)
 # create dataset to write to sql table #########
 tok = happierfuntokenizing.Tokenizer()
 tokenized_tweets = []
@@ -57,8 +63,13 @@ for id, created_at, tweet in curIn:
 			created_at, id) VALUES (%s, %s, %s, %s, %s)"
 		curOut.execute(stmt, data)
 	# get set of filtered tweets for 
-	tokenized_tweets.append([s for s in sentence 
-		if s not in stopwords and len(s) > 2 ])	
+	#tokenized_tweets.append([s for s in sentence 
+	#	if s not in stopwords and len(s) > 2 ])
+	tokenized_tweets.append([lem.lemmatize(w) for w in sentence if w.lower() not in stopwords and
+                            len(w.lower()) > 2 and
+                            not (re.match('@\\w',w)) and
+                            not (re.match('#\\w',w)) and
+                            not (re.match('htt\\w',w))])
 
 
 cnx.commit()
