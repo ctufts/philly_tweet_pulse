@@ -82,8 +82,8 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <!-- <script src="d3.v3.js"></script> -->
 
-<script src={{ url_for('static', filename='ldavis.v1.0.0.js') }}></script>
-<link rel="stylesheet" type = "text/css" href={{ url_for('static', filename='ldavis.v1.0.0.css') }}></script>
+<script src="static/ldavis.v1.0.0.js"></script>
+<link rel="stylesheet" type = "text/css" href="static/ldavis.v1.0.0.css"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 <body>
@@ -94,10 +94,10 @@
 <div class="chart" style="float:left" id="genderChart"></div>
 </div>
 
-<script src={{ url_for('static', filename='main.js') }}></script>
+<script src="static/main.js"></script>
 <div id = "topics"></div>
 <script>
-var vis = new LDAvis("#topics", '{{ url_for('static', filename='lda.json') }}' );
+var vis = new LDAvis("#topics", 'static/lda.json' );
 </script>
 
 

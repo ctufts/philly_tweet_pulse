@@ -32,7 +32,8 @@ function dsGenderChart() {
     .html(function(d) {
       var v = d.y1 - d.y0;
       return "<strong>Frequency:</strong> <span style='color:red'>" + v + "</span>";
-    })        
+    })
+
     // var svg = d3.select("#barChart").append("svg")
   var svg = d3.select("#genderChart").append("svg")
       .attr("width", width + margin.left + margin.right)
@@ -104,13 +105,13 @@ function dsGenderChart() {
         .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
     legend.append("rect")
-        .attr("x", width - 8)
+        .attr("x", width + 26)
         .attr("width", 18)
         .attr("height", 18)
         .style("fill", color);
 
     legend.append("text")
-        .attr("x", width - 10)
+        .attr("x", width + 22)
         .attr("y", 9)
         .attr("dy", ".35em")
         .style("text-anchor", "end")
@@ -228,13 +229,13 @@ function dsAgeChart() {
         .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
     legend.append("rect")
-        .attr("x", width + 22 )
+        .attr("x", width + 26 )
         .attr("width", 18)
         .attr("height", 18)
         .style("fill", color);
 
     legend.append("text")
-        .attr("x", width + 16)
+        .attr("x", width + 22)
         .attr("y", 9)
         .attr("dy", ".35em")
         .style("text-anchor", "end")
