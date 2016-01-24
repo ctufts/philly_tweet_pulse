@@ -14,7 +14,8 @@ function dsGenderChart() {
       .rangeRound([height, 0]);
 
   var color = d3.scale.ordinal()
-      .range(["#98abc5", "#ff8c00"]);
+      .range(["#7A99AC", "#E4002B"]);
+      // .range(["#D62728", "#1F77B4"]);
 
   var xAxis = d3.svg.axis()
       .scale(x)
@@ -31,7 +32,7 @@ function dsGenderChart() {
     .offset([-10, 0])
     .html(function(d) {
       var v = d.y1 - d.y0;
-      return "<strong>Frequency:</strong> <span style='color:red'>" + v + "</span>";
+      return "<strong>Tweets:</strong> <span style='color:#c8c8c8'>" + v + "</span>";
     })
 
     // var svg = d3.select("#barChart").append("svg")
@@ -73,13 +74,22 @@ function dsGenderChart() {
 
     svg.append("g")
         .attr("class", "y axis")
+        .attr("transform", "translate(-5,0)")
         .call(yAxis)
       .append("text")
         .attr("transform", "rotate(-90)")
         .attr("y",6)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
+        .style("font-size", 12)
         .text("Tweets");
+
+    svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px")
+        .text("Hourly Tweet Frequency By Gender");
 
     var ts = svg.selectAll(".ts")
         .data(data)
@@ -134,7 +144,10 @@ function dsAgeChart() {
   var y = d3.scale.linear()
       .rangeRound([height, 0]);
 
-  var color = d3.scale.category20b();
+  var color = d3.scale.ordinal()
+      .range(["#edf8fb","#bfd3e6","#9ebcda",
+        "#8c96c6","#8c6bb1","#88419d","#6e016b"]);
+  //d3.scale.category20b();
       // .range(["#98abc5", "#ff8c00"]);
 
   var xAxis = d3.svg.axis()
@@ -153,7 +166,7 @@ function dsAgeChart() {
     .offset([-10, 0])
     .html(function(d) {
       var v = d.y1 - d.y0;
-      return "<strong>Frequency:</strong> <span style='color:red'>" + v + "</span>";
+      return "<strong>Tweets:</strong> <span style='color:#c8c8c8;'>" + v + "</span>";
     })        
     // var svg = d3.select("#barChart").append("svg")
   var svg = d3.select("#ageChart").append("svg")
@@ -197,13 +210,22 @@ function dsAgeChart() {
 
     svg.append("g")
         .attr("class", "y axis")
+        .attr("transform", "translate(-5,0)")
         .call(yAxis)
       .append("text")
         .attr("transform", "rotate(-90)")
         .attr("y", 6)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
-        .text("Population");
+        .style("font-size", "12px")
+        .text("Tweets");
+
+    svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px")
+        .text("Hourly Tweet Frequency By Age");
 
     var ts = svg.selectAll(".ts")
         .data(data)

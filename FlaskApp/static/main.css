@@ -1,7 +1,147 @@
 /* custom css */
-#lineChart {    
-	position:absolute;
-	top:10px;
-	left:410px;
-	height: 150px;
-}
+/*  div {
+    border: 1px solid gray;
+  }*/
+  .axis {
+    font: 10px sans-serif;
+  }
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: white;
+    shape-rendering: crispEdges;
+  }
+  #topics-leftpanel > line {
+  	stroke: white;
+  }
+
+  .x.axis path {
+  display: none;
+  }
+  #ageChart {    
+    position:absolute;
+    width: 420px;
+    height: 620px; 
+  }
+  #ageChart rect {
+  	opacity: 0.8;
+  }
+  #ageChart text {
+  	fill: white;
+  }
+  #genderChart { 
+    position:absolute;
+    left:610px;
+    height:420px;
+    width:620px;
+  }
+  #genderChart rect {
+  	opacity:0.7;
+  }
+  #genderChart text {
+  	fill: white;
+  }
+
+  #topics {
+    position:absolute;
+    top:400px;
+    left:10px;
+  }
+  #topics-top > div:nth-child(1),
+  #topics-lambdaInput {
+  	background-color: #4B4B4D!important;
+  	border-radius: 3px;
+  	padding: 7px 5px 5px 5px!important;
+/*  	font-size: .8rem;
+*/  }
+  div#topics-lambdaZero text,
+  #topics-lambdaInput > label {
+  	font-size: 1.3rem!important;
+  }
+  #topics-lambdaZero > text:nth-child(2){
+  	font-variant-position: super!important; 
+  	font-size: .9rem!important;	
+  }
+  #topics-lamlabel {
+  	line-height: .8rem;
+  	width: 80px!important;
+  }
+
+  div#topics-lambdaZero {
+  	margin-top: -2px;
+    margin-left: 3px;
+  }
+	button {
+    padding: 4px;
+    border-radius: 0px;
+    margin-right: 3px;
+    font-size: 1.1rem;
+    color: #666;
+    text-transform: uppercase;
+  }
+  input#topics-topic,
+  input#topics-lambdaInput {
+  	margin-right: 5px;
+    font-size: 1.3rem;
+    color: #666;
+  }
+
+  #topics-top > div:nth-child(1) > label,
+  #topics-lambdaInput > label {
+  	padding: 7px;
+	font-size: 2rem;
+  }
+  #topics-top > div:nth-child(1)
+/*  .chart {
+    margin: 10px;
+    padding: 10px;
+   }*/
+  .tick {
+    fill: white;
+   }
+
+  .legend {
+  	fill: white;
+  }
+  #topics {
+  	fill: white;
+  }
+  #topics-bar-freqs > text.bubble-tool {
+  	fill: white;
+  }
+  .terms {
+  	fill: white;
+  }
+  #topics-bar-freqs > a:nth-child(6) > text {
+  	fill: white;
+  }
+  text.txt {
+  	stroke: white;
+  }
+  /*#genderChart > svg > g > g.y.axis */
+  .d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+  }
+/* Creates a small triangle extender for the tooltip */
+  .d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+  }
+/* Style northward tooltips differently */
+  .d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
