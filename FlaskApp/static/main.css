@@ -18,35 +18,35 @@
   .x.axis path {
   display: none;
   }
-  #ageChart {    
+  /*#ageChart {    
     position:absolute;
     width: 420px;
     height: 620px; 
-  }
+  }*/
   #ageChart rect {
   	opacity: 0.8;
   }
   #ageChart text {
   	fill: white;
   }
-  #genderChart { 
+  /* #genderChart { 
     position:absolute;
     left:610px;
     height:420px;
     width:620px;
-  }
+  }*/
   #genderChart rect {
   	opacity:0.7;
   }
   #genderChart text {
   	fill: white;
   }
-
+/*
   #topics {
     position:absolute;
     top:400px;
     left:10px;
-  }
+  }*/
   #topics-top > div:nth-child(1),
   #topics-lambdaInput {
   	background-color: #4B4B4D!important;

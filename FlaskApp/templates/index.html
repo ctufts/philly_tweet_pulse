@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="static/bootstrap.css">
 <link rel="stylesheet" type = "text/css" href="static/ldavis.v1.0.0.css"></script>
 <link rel="stylesheet" type="text/css" href="static/main.css">
@@ -17,19 +17,19 @@
 
 <!-- Display histogram of tweet frequency each hour -->
 <div class="container-fluid"> 
-  <div class="row-fluid">
-    <div class="span5 offset1"  id="ageChart"></div>
-    <div class="span5 offset1"  id="genderChart"></div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6" id="ageChart"></div>
+    <div class="col-xs-12 col-md-6"  id="genderChart"></div>
+  </div>
+
+
+  <script src="static/main.js"></script>
+  <div class="row">
+    <div class="col-xs-12" id="topics">
+      <script>
+        var vis = new LDAvis("#topics", 'static/lda.json' );
+      </script>
+    </div>
   </div>
 </div>
-
-<script src="static/main.js"></script>
-<div class="row-fluid" id = "topics">
-  <div class="span10 offset1" >
-    <script>
-      var vis = new LDAvis("#topics", 'static/lda.json' );
-    </script>
-  </div>
-</div>
-
 </body>
