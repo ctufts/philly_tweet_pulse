@@ -32,7 +32,7 @@ data_vis = pyLDAvis.gensim.prepare(ldamodel, corpus, dictionary)
 parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 # write html to file
-pyLDAvis.save_json(data_vis, parent_directory + "/FlaskApp/static/lda.json")
+pyLDAvis.save_json(data_vis, parent_directory + "/FlaskApp/static/data/lda.json")
 # pyLDAvis.save_json(data_vis, 'lda.json')
 
 # shot html data

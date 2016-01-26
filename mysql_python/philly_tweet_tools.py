@@ -68,7 +68,7 @@ def get_gender_data():
 	df_spread.columns =[str(s2) for (s1,s2) in df_spread.columns.tolist()]
 	# print to json
 	parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-	df_spread.to_csv(parent_directory + '/FlaskApp/static/gender_data.csv')
+	df_spread.to_csv(parent_directory + '/FlaskApp/static/data/gender_data.csv')
 	return()
 	# return(df_spread.to_csv())
 
@@ -114,7 +114,7 @@ def get_age_data():
 	df_spread.columns =[str(s2) for (s1,s2) in df_spread.columns.tolist()]
 	# print to csv 
 	parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-	df_spread.to_csv(parent_directory + '/FlaskApp/static/age_data.csv')
+	df_spread.to_csv(parent_directory + '/FlaskApp/static/data/age_data.csv')
 	return()
 	# return(df_spread.to_csv())
 

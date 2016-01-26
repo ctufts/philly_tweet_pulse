@@ -20,7 +20,7 @@ function dsGenderChart() {
   var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom")
-      .tickFormat(d3.time.format("%m/%d/%y %H:%M"));
+      .tickFormat(d3.time.format("%m/%d/%y %I %p"));
 
   var yAxis = d3.svg.axis()
       .scale(y)
@@ -45,7 +45,7 @@ function dsGenderChart() {
   svg.call(tip);
 
 
-  d3.csv('/static/gender_data.csv', function(error, data) {
+  d3.csv('/static/data/gender_data.csv', function(error, data) {
     if (error) throw error;
     // console.log(data[0])
     color.domain(d3.keys(data[0]).filter(function(key) { return key !== "ts"; }));
@@ -55,6 +55,7 @@ function dsGenderChart() {
       d.ages = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
       d.total = d.ages[d.ages.length - 1].y1;
       d.ts    = parseDate(d.ts);
+      d.ts    = d3.time.hour.offset(d.ts, -5);
     });
 
     x.domain(data.map(function(d) { return d.ts; }));
@@ -153,7 +154,7 @@ function dsAgeChart() {
   var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom")
-      .tickFormat(d3.time.format("%m/%d/%y %H:%M"));
+      .tickFormat(d3.time.format("%m/%d/%y %I %p"));
 
 
   var yAxis = d3.svg.axis()
@@ -178,7 +179,7 @@ function dsAgeChart() {
   svg.call(tip);
 
 
-  d3.csv('/static/age_data.csv', function(error, data) {
+  d3.csv('/static/data/age_data.csv', function(error, data) {
     if (error) throw error;
     console.log(data[0])
     color.domain(d3.keys(data[0]).filter(function(key) { return key !== "ts"; }));
@@ -188,6 +189,8 @@ function dsAgeChart() {
       d.ages = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
       d.total = d.ages[d.ages.length - 1].y1;
       d.ts    = parseDate(d.ts);
+     // offset to eastern standard time
+      d.ts    = d3.time.hour.offset(d.ts, -5);
     });
 
     // data.sort(function(a, b) { return b.total - a.total; });
