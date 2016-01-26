@@ -45,7 +45,7 @@ function dsGenderChart() {
   svg.call(tip);
 
 
-  d3.csv('/genderData', function(error, data) {
+  d3.csv('/static/gender_data.csv', function(error, data) {
     if (error) throw error;
     // console.log(data[0])
     color.domain(d3.keys(data[0]).filter(function(key) { return key !== "ts"; }));
@@ -178,7 +178,7 @@ function dsAgeChart() {
   svg.call(tip);
 
 
-  d3.csv('/ageData', function(error, data) {
+  d3.csv('/static/age_data.csv', function(error, data) {
     if (error) throw error;
     console.log(data[0])
     color.domain(d3.keys(data[0]).filter(function(key) { return key !== "ts"; }));

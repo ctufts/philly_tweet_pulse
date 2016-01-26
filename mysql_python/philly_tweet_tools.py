@@ -1,9 +1,10 @@
-from mysql_python import configSettings as cs
-#import configSettings as cs
+#from mysql_python import configSettings as cs
+import configSettings as cs
 import mysql.connector
 import json
 import collections
 import pandas as pd
+import os.path
 
 
 def get_data():
@@ -66,7 +67,10 @@ def get_gender_data():
 	# remove extra pivot table labels
 	df_spread.columns =[str(s2) for (s1,s2) in df_spread.columns.tolist()]
 	# print to json
-	return(df_spread.to_csv())
+	parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+	df_spread.to_csv(parent_directory + '/FlaskApp/static/gender_data.csv')
+	return()
+	# return(df_spread.to_csv())
 
 def get_age_data():
 	cnx = mysql.connector.connect(user=cs.user, password=cs.password,
@@ -108,8 +112,11 @@ def get_age_data():
 	df_spread = df.pivot(columns='ageRange', index='ts')
 	# remove extra pivot table labels
 	df_spread.columns =[str(s2) for (s1,s2) in df_spread.columns.tolist()]
-	# print to json
-	return(df_spread.to_csv())
+	# print to csv 
+	parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+	df_spread.to_csv(parent_directory + '/FlaskApp/static/age_data.csv')
+	return()
+	# return(df_spread.to_csv())
 
 
 

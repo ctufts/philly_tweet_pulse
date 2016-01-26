@@ -17,7 +17,7 @@ import gensim
 import pandas as pd
 from nltk.corpus import stopwords
 import os.path
-
+import philly_tweet_tools
 ################# import db config settings ##################
 cnx = mysql.connector.connect(user=cs.user, password=cs.password,
                               host=cs.host,
@@ -79,3 +79,6 @@ cnx.commit()
 cnx.close()
 	
 
+# get age and gender data and write to file for  web app
+philly_tweet_tools.get_gender_data()
+philly_tweet_tools.get_age_data()
