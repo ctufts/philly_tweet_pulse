@@ -1,3 +1,4 @@
 *configSettings.py
 __pycache__
 mysql_python/data/*
+*badWords.json

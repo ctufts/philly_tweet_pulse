@@ -8,14 +8,11 @@
 # Developing Age and Gender Predictive Lexica over Social Media. In EMNLP
 
 import csv
-import happierfuntokenizing
 import mysql.connector
 import configSettings as cs
 import collections
 import pickle
-import gensim
 import pandas as pd
-from nltk.corpus import stopwords
 import os.path
 import philly_tweet_tools
 ################# import db config settings ##################

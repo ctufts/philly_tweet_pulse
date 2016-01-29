@@ -20,7 +20,7 @@ dictionaryObject.close()
 # dictionary = corpora.Dictionary(filtered_tweets)
 # corpus = [dictionary.doc2bow(text) for text in filtered_tweets]
 
-ldamodel = models.ldamulticore.LdaMulticore(corpus, num_topics=20, 
+ldamodel = models.ldamulticore.LdaMulticore(corpus, num_topics=8, 
                                                    id2word = dictionary, passes=50)
 
 # # generate vis

@@ -15,10 +15,10 @@ import configSettings as cs
 import collections
 import pickle
 import gensim
-from nltk import WordNetLemmatizer
+from nltk import WordNetLemmatizer, word_tokenize
 from nltk.corpus import stopwords
 import os.path
-
+import json
 ################# read in tweets from main table ##################
 cnx = mysql.connector.connect(user=cs.user, password=cs.password,
                               host=cs.host,
@@ -44,11 +44,14 @@ curIn.execute(query)
 lem = WordNetLemmatizer()
 # initialize stopwords
 stopwords = stopwords.words('english')
-additional_stopwords = ['philly','philadelphia','...']
-for sword in additional_stopwords:
-    stopwords.append(sword)
+parent_directory = os.path.abspath(os.path.dirname(__file__))
+bannedWords = json.loads(open(parent_directory + '/lexica/badWords.json').read())
+stopwords = stopwords + bannedWords + ['philly','philadelphia','...']
+#for sword in additional_stopwords:
+#    stopwords.append(sword)
 # create dataset to write to sql table #########
 tok = happierfuntokenizing.Tokenizer()
+
 tokenized_tweets = []
 for id, created_at, tweet in curIn:
 	# tokenize and get word frequency
@@ -65,11 +68,13 @@ for id, created_at, tweet in curIn:
 	# get set of filtered tweets for 
 	#tokenized_tweets.append([s for s in sentence 
 	#	if s not in stopwords and len(s) > 2 ])
-	tokenized_tweets.append([lem.lemmatize(w) for w in sentence if w.lower() not in stopwords and
-                            len(w.lower()) > 2 and
+	sentence_topic_model = word_tokenize(tweet.lower())
+	tokenized_tweets.append([w for w in sentence_topic_model if w.lower() not in stopwords and
+                            len(w) > 2 and
                             not (re.match('@\\w',w)) and
                             not (re.match('#\\w',w)) and
-                            not (re.match('htt\\w',w))])
+                            not (re.match('htt\\w',w)) and
+                            not (re.match('[^A-Za-z0-9]+', w))])
 
 
 cnx.commit()
