@@ -15,6 +15,7 @@ import configSettings as cs
 import collections
 import pickle
 import gensim
+from nltk.tokenize import WhitespaceTokenizer
 from nltk import WordNetLemmatizer, word_tokenize
 from nltk.corpus import stopwords
 import os.path
@@ -68,14 +69,21 @@ for id, created_at, tweet in curIn:
 	# get set of filtered tweets for 
 	#tokenized_tweets.append([s for s in sentence 
 	#	if s not in stopwords and len(s) > 2 ])
-	sentence_topic_model = word_tokenize(tweet.lower())
-	tokenized_tweets.append([w for w in sentence_topic_model if w.lower() not in stopwords and
-                            len(w) > 2 and
-                            not (re.match('@\\w',w)) and
-                            not (re.match('#\\w',w)) and
-                            not (re.match('htt\\w',w)) and
-                            not (re.match('[^A-Za-z0-9]+', w))])
-
+	sentence_topic_model = WhitespaceTokenizer().tokenize(tweet.lower())
+	temp = []
+	for w in sentence_topic_model:
+		if w not in stopwords and \
+			len(w) > 2 and \
+    			not (re.match('@\\w',w)) and \
+    			not (re.match('#\\w',w)) and \
+    			not (re.match('htt\\w',w)) and \
+    			not (re.match('[^A-Za-z0-9]+', w)):
+    				temp += [words for words in word_tokenize(w) if \
+    					len(words) > 2 and  words not in stopwords and
+    					not (re.match('[^A-Za-z0-9]+', words))]
+	
+	if temp:
+ 		tokenized_tweets.append(temp)
 
 cnx.commit()
 cnx.close()

@@ -20,8 +20,8 @@ dictionaryObject.close()
 # dictionary = corpora.Dictionary(filtered_tweets)
 # corpus = [dictionary.doc2bow(text) for text in filtered_tweets]
 
-ldamodel = models.ldamulticore.LdaMulticore(corpus, num_topics=8, 
-                                                   id2word = dictionary, passes=50)
+ldamodel = models.ldamulticore.LdaMulticore(corpus, num_topics=100,alpha = 0.30, chunksize = 2000, 
+                                                   id2word = dictionary, passes=5)
 
 # # generate vis
 data_vis = pyLDAvis.gensim.prepare(ldamodel, corpus, dictionary)

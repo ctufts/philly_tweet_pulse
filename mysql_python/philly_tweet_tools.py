@@ -44,7 +44,7 @@ def get_gender_data():
 
 
 	cursor=cnx.cursor()
-	query = ("SELECT if(gender >= 0, 'F','M') as GenderStr,\
+	query = ("SELECT if(gender >= 0, 'Female','Male') as GenderStr,\
 		date_format(created_at, '%m/%d/%Y %H') as ts,\
 		count(*) as Count \
 		FROM \
@@ -82,7 +82,7 @@ def get_age_data():
 	cursor=cnx.cursor()
 
 	query = ("SELECT date_format(created_at, '%m/%d/%Y %H') as ts,\
-      	   case when age <= 17 then '0 - 17' \
+      	   case when age <= 17 then '17-' \
            when age > 17 and age <= 24  then '18-24' \
            when age > 24 and age <= 34  then '25-34' \
            when age > 34 and age <= 44  then '35-44' \

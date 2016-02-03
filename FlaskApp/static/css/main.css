@@ -2,6 +2,14 @@
 /*  div {
     border: 1px solid gray;
   }*/
+  sup {
+        font-size: 0.6em;
+        vertical-align: super;
+        line-height: 0;
+  }
+  hr {
+    border: 1px solid white;
+  }
   .axis {
     font: 10px sans-serif;
   }
@@ -10,6 +18,12 @@
     fill: none;
     stroke: white;
     shape-rendering: crispEdges;
+  }
+  #footer {
+  /*position:fixed;
+  bottom: 0px;
+  width: 400px;*/
+  text-align: center;
   }
   #topics-leftpanel > line {
   	stroke: white;
@@ -114,6 +128,9 @@
   }
   #topics-bar-freqs > a:nth-child(6) > text {
   	fill: white;
+  }
+  #topics-bar-freqs > a:nth-child(5) > text {
+	fill: white;
   }
   text.txt {
   	stroke: white;

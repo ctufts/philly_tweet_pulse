@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+<link rel="stylesheet" type = "text/css" href="static/css/ldavis.v1.0.0.css"></script>
+<link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!-- <script src="d3.v3.js"></script> -->
+
+<script src="static/js/ldavis.v1.0.0.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<body>
+
+<!-- Display histogram of tweet frequency each hour -->
+<div class="container-fluid"> 
+  <div class="row">
+    <div class"col-xs-12">
+      <h1>Philly Tweet Dashboard</h1>
+      <h2> Overview</h2>
+      <p> The Philly Tweet Dashboard is an ongoing project to
+	  provide demographic and topic information
+	  about tweets referencing the terms <i>Philly</i> and <i>Philadelphia</i>.
+      </p>
+      <h2> Demographics</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="ageChart"></div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"  id="genderChart"></div>
+    <div class="col-xs-11
+    <p></p>
+    <p> The charts above provide hourly tallies of tweets referencing
+        Philly sorted by age group and gender over the last 24 hours.
+        The gender and age of the tweets is estimated using
+        lexica provided in <a href="#fn1" id="ref1">Sap, et al.(2014)</a> available courtesy of 
+	the  <a href="http://www.wwbp.org/">World-Well Being Project</a>. 
+    </p>
+    <p></p>
+  </div>
+  
+
+  <script src="static/js/main.js"></script>
+  <div class="row">
+    <div class="col-xs-12" id="topics">
+      <script>
+        var vis = new LDAvis("#topics", 'static/data/lda.json' );
+      </script>
+    </div>
+  </div>
+</div>
+<hr></hr>
+<sup id="fn1"> <a href="http://www.wwbp.org/publications.html#p3">Sap, M., Park, G., Eichstaedt, 
+	J. C., Kern, M. L., Stillwell, D. J., Kosinski, M.,
+	 Ungar, L. H., & Schwartz, H. A. (2014). 
+	Developing age and gender predictive lexica over 
+	social media. Proceedings of the 2014 Conference on
+	 Empirical Methods in Natural Language Processing (EMNLP), (), . . .
+	</a>
+  <a href="#ref1"></a></sup>
+</body>

@@ -14,22 +14,128 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 <body>
-
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P92ZSS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P92ZSS');</script>
+  <!-- End Google Tag Manager -->
 <!-- Display histogram of tweet frequency each hour -->
 <div class="container-fluid"> 
   <div class="row">
-    <div class="col-xs-12 col-md-6" id="ageChart"></div>
-    <div class="col-xs-12 col-md-6"  id="genderChart"></div>
+    <div class="col-xs-10">
+      <h1>Philly Tweet Dashboard</h1>
+      <h2> Overview</h2>
+      <p> The Philly Tweet Dashboard is an ongoing project to
+	  provide demographic and topic information
+	  of tweets referencing Philadelphia.  All tweets used in the analysis contain the term <i>Philly</i> 
+	  or <i>Philadelphia</i>.
+      </p>
+      <h2> Demographics</h2>
+    </div>
   </div>
-
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="ageChart"></div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"  id="genderChart"></div>
+    <div class="col-xs-10">
+      <p></p>
+      <p> The charts above provide hourly tallies of tweets referencing
+          Philadelphia sorted by age group and gender over the last 24 hours.
+          The gender and age of the author is estimated using
+          lexica provided in <a href="#fn1" id="ref1">Sap, et al.(2014)</a> available courtesy of 
+	  the  <a href="http://www.wwbp.org/">World-Well Being Project</a>. 
+      </p>
+    </div>
+    <p></p>
+  </div>
+  
 
   <script src="static/js/main.js"></script>
   <div class="row">
+    <div class="col-xs-12">
+      <h2>Tweet Topics on <span id="todaysDate"></span></h2>
+
+      <script>
+        var today = new Date();
+	var yesterday = new Date(today);
+	yesterday.setDate(today.getDate() - 1);
+        var day = yesterday.getDate();
+        var month = yesterday.getMonth() + 1;
+	var year = yesterday.getFullYear();
+        document.getElementById("todaysDate").innerHTML = month  + '/' + day + '/' + year;
+      </script>
+    </div>
     <div class="col-xs-12" id="topics">
+
       <script>
         var vis = new LDAvis("#topics", 'static/data/lda.json' );
       </script>
     </div>
+    <div class="col-xs-12">
+      <p>The charts above provide an insight into the topics that are most
+	 prevalent in tweets referencing Philadelphia on the given date.  The chart on
+	 the left provides a visualization of the <i>distance</i> between topics.
+         <a href="#fn2" id="ref2">(Chuang, et al.,2012)</a> 
+	 Essentially this is a measure of how different one topic is from another. 
+	 The plot on the right shows the overall frequency of the term (red) and 
+	 the estimated frequency in the given topic (blue). 
+	 The relevance metric, &lambda;, determines the terms which will
+	 be displayed. In general:
+      </p>
+      <ul>
+        <li>&lambda; values closer to 1: Shows terms with the highest probability within the topic 
+	   <ul><li>favors terms used very frequently, often across many topics</li></ul>
+	</li>
+        <li>&lambda; values closer to 0: Shows terms with the highest ratio of a term's probability within a topic to 
+	    its marginal probability across the corpus. <a href="#fn3" id="ref3">(Seiver, Shirley, 2014)</a>
+	    <ul><li>favors terms which are very topic specific, but may occur rarely</li></ul>
+	</li> 
+      </ul>
+      <p>Topics are estimated using Latent Direchlet Allocation <a href="#fn4" id="ref4">(Blei, et al.,2003)</a>
+         implemented with <a href="https://radimrehurek.com/gensim/models/ldamodel.html">Gensim</a> and visualized
+	 using <a href="pyldavis.readthedocs.org/en/latest/modules/API.html#module-pyLDAvis">pyldavis</a>.
+      </p>
+    </div>
+  </div>
+<hr></hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <sup id="fn1"> <a href="http://www.wwbp.org/publications.html#p3">Sap, M., Park, G., Eichstaedt, 
+	J. C., Kern, M. L., Stillwell, D. J., Kosinski, M.,
+	 Ungar, L. H., & Schwartz, H. A. (2014). 
+	Developing age and gender predictive lexica over 
+	social media. Proceedings of the 2014 Conference on
+	 Empirical Methods in Natural Language Processing (EMNLP), (), . . .
+	</a>
+      <a href="#ref1"></a></sup>
+      <p></p>
+      <sup id="fn2"> <a href="http://vis.stanford.edu/files/2012-Termite-AVI.pdf"> 
+	Chuang, J., Manning, C. D., & Heer, J. (2012, May). 
+	Termite: Visualization techniques for assessing textual topic models.
+	 In Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 74-77). ACM.
+	</a>
+      <a href="#ref2"></a></sup>
+      <p></p>
+      <sup id="fn4"> <a href="http://cs250b-projects.googlecode.com/svn-history/r125/trunk/Project3/BleiNgJordan2003.pdf"> 
+	Blei, D. M., Ng, A. Y., & Jordan, M. I.
+	 (2003). Latent dirichlet allocation. the Journal of machine Learning research, 3, 993-1022.
+	</a>
+      <a href="#ref4"></a></sup>
+      <p></p>
+      <sup id="fn3"> <a href="http://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf"> 
+	Sievert, C., & Shirley, K. E. (2014, June). 
+	LDAvis: A method for visualizing and interpreting topics. 
+	In Proceedings of the workshop on interactive language learning, visualization, and interfaces (pp. 63-70).
+	</a>
+      <a href="#ref3"></a></sup>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
   </div>
 </div>
+<div id="footer">&copy; 2016 <a href="https://twitter.com/devlintufts">Chris Tufts</a></div>
 </body>

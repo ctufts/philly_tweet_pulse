@@ -1,0 +1,384 @@
+update ldavis
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/pandas/__init__.py:7: DeprecationWarning: bad escape \s
+  from pandas import hashtable, tslib, lib
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/scipy/_lib/decorator.py:205: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  first = inspect.getargspec(caller)[0][0]  # first arg
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/scipy/_lib/decorator.py:205: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  first = inspect.getargspec(caller)[0][0]  # first arg
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/profiledir.py:52: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  `profile` option.""",
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/application.py:118: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/application.py:128: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="""The IPython profile to use."""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/application.py:142: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/application.py:160: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="""Whether to overwrite existing config files when copying""")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/application.py:162: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="""Whether to create profile dir if it doesn't exist""")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/application.py:173: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/application.py:178: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  usual traceback""")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:61: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  plain_text_only = Bool(False, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:78: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:311: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  enabled = Bool(True, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:317: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  singleton_printers = Dict(config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:321: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  type_printers = Dict(config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:325: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  deferred_printers = Dict(config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:592: DeprecationWarning: metadata {'config': False} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  enabled = Bool(True, config=False)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:598: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:605: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  pprint = Bool(True, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:608: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  verbose = Bool(False, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:611: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  max_width = Integer(79, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:614: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  newline = Unicode('\n', config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/formatters.py:619: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  float_precision = CUnicode('', config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/magic.py:307: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  "Automatically call line magics without requiring explicit % prefix")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:132: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  multi_line_specials = CBool(True, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:362: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  priority = Integer(100, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:367: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  enabled = Bool(True, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:392: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  priority = Integer(100, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:395: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  enabled = Bool(True, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:414: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  priority = Integer(100, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:415: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  enabled = Bool(False, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:427: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  priority = Integer(250, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:439: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  priority = Integer(300, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:453: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  priority = Integer(600, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:471: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  priority = Integer(700, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:495: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  priority = Integer(900, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:510: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  priority = Integer(1000, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:513: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="RegExp to identify potential function names.")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prefilter.py:515: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="RegExp to exclude strings with this start from autocalling.")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/alias.py:194: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  default_aliases = List(default_aliases(), config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/alias.py:195: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  user_aliases = List(default_value=[], config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/history.py:143: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/history.py:152: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/history.py:160: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/history.py:475: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Should the history database include output? (default: no)"
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/history.py:478: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Write to database every x commands (higher values save disk access & power).\n"
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prompts.py:284: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  color_scheme = Unicode('Linux', config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prompts.py:300: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Input prompt.  '\\#' will be transformed to the prompt number")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prompts.py:302: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Continuation prompt.")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prompts.py:304: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Output prompt. '\\#' will be transformed to the prompt number")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/prompts.py:309: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:229: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:240: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:247: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:252: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:256: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="""The part of the banner to be printed before the profile"""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:259: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="""The part of the banner to be printed after the profile"""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:270: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:277: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:281: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Set the color scheme (NoColor, Linux, or LightBG)."
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:292: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  debug = CBool(False, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:304: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:307: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Don't call post-execute functions that have failed in the past."
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:321: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  ipython_dir= Unicode('', config=True) # Set to get_ipython_dir() in __init__
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:337: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:342: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:348: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:351: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:355: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:358: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Save multi-line entries as one entry in readline history"
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:362: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  will be displayed as regular output instead."""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:368: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Deprecated, use PromptManager.in_template")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:370: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Deprecated, use PromptManager.in2_template")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:372: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Deprecated, use PromptManager.out_template")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:374: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Deprecated, use PromptManager.justify")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:397: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Show rewritten input, e.g. for autocall."
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:400: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  quiet = CBool(False, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:402: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  history_length = Integer(10000, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:408: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:413: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  readline_use = CBool(True, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:414: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  readline_remove_delims = Unicode('-/~', config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:431: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  ], config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:444: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  run interactively (displaying output from expressions).""")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:448: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  separate_in = SeparateUnicode('\n', config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:449: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  separate_out = SeparateUnicode('', config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:450: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  separate_out2 = SeparateUnicode('', config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:451: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  wildcards_case_sensitive = CBool(True, config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/interactiveshell.py:453: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  default_value='Context', config=True)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/terminal/interactiveshell.py:258: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="auto editing of files with syntax errors.")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/terminal/interactiveshell.py:263: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  you can force a direct exit without any confirmation.""",
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/terminal/interactiveshell.py:273: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Set the editor used by IPython (default to $EDITOR/vi/notepad)."
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/terminal/interactiveshell.py:276: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="The shell program to be used for paging.")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/terminal/interactiveshell.py:288: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  default.""",
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/terminal/interactiveshell.py:291: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Enable auto setting the terminal title."
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/completer.py:276: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/completer.py:556: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/completer.py:568: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/completer.py:578: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/magics/script.py:89: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """,
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/magics/script.py:116: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:137: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="A list of dotted module names of IPython extensions to load."
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:140: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="dotted module name of an IPython extension to load."
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:146: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Reraise exceptions encountered loading IPython extensions?",
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:150: DeprecationWarning: metadata {'config': False} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  default_extensions = List(Unicode(), [u'storemagic'], config=False)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:154: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  be hidden from tools like %who?"""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:158: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="""List of files to run at IPython startup."""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:162: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  variable at IPython startup."""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:165: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="""A file to be run""")
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:168: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="""lines of code to run at IPython startup."""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:171: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Execute the given command string."
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:174: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Run the module as a script."
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:177: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Enable GUI event loop integration with any of {0}.".format(gui_keys)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:182: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  the default matplotlib backend."""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:188: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/core/shellapp.py:195: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/extensions/storemagic.py:80: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  """
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/terminal/ipapp.py:253: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="""Start IPython quickly by skipping the loading of config files."""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/terminal/ipapp.py:260: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  help="Whether to display a banner upon starting IPython."
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/IPython/terminal/ipapp.py:268: DeprecationWarning: metadata {'config': True} was set from the constructor.  Metadata should be set using the .tag() method, e.g., Int().tag(key1='value1', key2='value2')
+  file or command."""
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:315: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  writer_spec = inspect.getargspec(writer)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/skbio/io/_registry.py:185: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  reader_spec = inspect.getargspec(reader)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/funcmakers.py:45: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/decorators.py:56: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = inspect.getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/decorators.py:56: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = inspect.getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/decorators.py:56: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = inspect.getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/decorators.py:56: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = inspect.getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/decorators.py:56: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = inspect.getargspec(func)
+/home/chris/anaconda3/envs/flaskpy3/lib/python3.5/site-packages/funcy/decorators.py:56: DeprecationWarning: inspect.getargspec() is deprecated, use inspect.signature() instead
+  spec = inspect.getargspec(func)
+297.66user 27.26system 3:04.83elapsed 175%CPU (0avgtext+0avgdata 578136maxresident)k
+2256inputs+1112outputs (11major+4658394minor)pagefaults 0swaps
+update Topic table
+update Demo table
+processes complete
