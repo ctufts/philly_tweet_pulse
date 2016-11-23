@@ -1,10 +1,14 @@
+import os,sys,inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+#parentdir = os.path.dirname(currentdir)
+sys.path.insert(0,currentdir) 
 from gensim import corpora, models
 import pyLDAvis.gensim
 import mysql.connector
 import configSettings as cs
 import collections
 import pickle
-import os.path
+#import os.path
 
 parent_directory = os.path.abspath(os.path.dirname(__file__))
 corpusObject = open(parent_directory + '/data/corpus','rb')  

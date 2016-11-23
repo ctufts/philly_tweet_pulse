@@ -1,10 +1,14 @@
+import os,sys,inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+#parentdir = os.path.dirname(currentdir)
+sys.path.insert(0,currentdir) 
 #from mysql_python import configSettings as cs
 import configSettings as cs
 import mysql.connector
 import json
 import collections
 import pandas as pd
-import os.path
+#import os.path
 
 
 def get_data():
